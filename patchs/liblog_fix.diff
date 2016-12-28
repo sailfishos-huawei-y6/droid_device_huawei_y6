@@ -1,0 +1,13 @@
+index 0bc42d5..949b20a 100644
+--- a/liblog/log_event_write.c
++++ b/liblog/log_event_write.c
+@@ -86,3 +86,9 @@ int __android_log_error_write(int tag, const char *subTag, int32_t uid, const ch
+ 
+     return __android_log_bwrite(tag, buf, pos);
+ }
++
++void __android_logPower_print(void) {}
++
++int isLogEnabled(void) {
++    return 0;
++}
